@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="@color/colorMain" />
+            <!-- dashGap 表示描边间隙的宽度 -->
+            <!-- dashGap 表示描边的宽度 -->
+            <stroke android:width="@dimen/dp_0.5" android:dashGap="10dp" android:dashWidth="20dp" android:color="@color/colorStroke" />
+            <padding android:bottom="@dimen/dp_5" android:left="@dimen/dp_5" android:right="@dimen/dp_5" android:top="@dimen/dp_5" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="@color/colorHint" />
+            <stroke android:width="@dimen/dp_0.5" android:color="@color/colorHint" />
+        </shape>
+    </item>
+</selector>
